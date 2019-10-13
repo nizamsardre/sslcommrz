@@ -97,3 +97,7 @@ let test = new SSLCommerzPayment({
 ```
 
 Find more details in [SSLCommerz Developer's Guide](https://developer.sslcommerz.com/)
+- Team Email: integration@sslcommerz.com (For any query)
+
+© 2019 SSLCOMMERZ ALL RIGHTS RESERVED
+
