@@ -1,4 +1,4 @@
-### SSLCommerz npm Module Integration
+### SSLCommerz - NodeJs NPM
 
 
 ### Installation
