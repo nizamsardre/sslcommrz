@@ -4,8 +4,10 @@
   "description": "",
   "main": "test.js",
   "dependencies": {
+    "axios": "^0.19.2",
     "got": "^11.3.0",
     "npm": "^6.14.5",
+    "qs": "^6.9.4",
     "sslcommerz": "^1.0.4"
   },
   "devDependencies": {},

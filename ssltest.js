@@ -1,7 +1,9 @@
 
 const got = require('got');
-const fetch = require('node-fetch');
-var FormData = require('form-data');
+const axios = require('axios');
+const qs = require('qs');
+// const fetch = require('node-fetch');
+//var FormData = require('form-data');
 //module.exports.request =  async (method, url, urlParams, post_body) => {
  
   let post_body = {};
@@ -29,10 +31,10 @@ var FormData = require('form-data');
 
  
 //fetch
-let fdata = new FormData();
-for(const a  in post_body) {
-    fdata.append(a, post_body[a] ? post_body[a] : '');
-}
+// let fdata = new FormData();
+// for(const a  in post_body) {
+//     fdata.append(a, post_body[a] ? post_body[a] : '');
+// }
 
 
   const urlParams = null;
@@ -48,18 +50,18 @@ for(const a  in post_body) {
         };
        // params.searchParams = urlParams ? urlParams : undefined;
         params.form = post_body ? post_body : undefined;
-        //const response = await got(url, params);
-
+       // const response = await got(url, params);
+        const response = await axios(url, {method: 'POST', data: qs.stringify(post_body)});
         //fetch
-         fetch(url, {method: 'POST', body: fdata})
-          .then(function(u){ 
-              return u.json();
-          })
-          .then(function(j) { 
-              console.log(1,j); 
-          });
+        //  fetch(url, {method: 'POST', body: fdata})
+        //   .then(function(u){ 
+        //       return u.json();
+        //   })
+        //   .then(function(j) { 
+        //       console.log(1,j); 
+        //   });
         
-        //console.log(1,response.body);
+        console.log(1,response.data);
       } catch(error){
         console.log(error) ;
     }
