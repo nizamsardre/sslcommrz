@@ -1,25 +1,25 @@
 {
-  "name": "sslcommerz",
-  "version": "1.0.4",
-  "main": "index.js",
+  "name": "sslcz",
+  "version": "1.0.0",
+  "description": "",
+  "main": "test.js",
+  "dependencies": {
+    "got": "^11.3.0",
+    "npm": "^6.14.5",
+    "sslcommerz": "^1.0.4"
+  },
+  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ranasl62/npm-sslcommerz.git"
+    "url": "git+https://github.com/sslcommerz/SSLCommerz-NodeJS.git"
   },
-  "keywords": [],
-  "author": "Md. Rana Hossain",
+  "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/ranasl62/npm-sslcommerz/issues"
+    "url": "https://github.com/sslcommerz/SSLCommerz-NodeJS/issues"
   },
-  "homepage": "https://github.com/ranasl62/npm-sslcommerz#readme",
-  "description": "",
-  "dependencies": {
-    "form-data": "^2.5.0",
-    "node-fetch": "^2.6.0",
-    "requirejs": "^2.3.6"
-  }
+  "homepage": "https://github.com/sslcommerz/SSLCommerz-NodeJS#readme"
 }
