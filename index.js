@@ -61,7 +61,7 @@ const qs = require('qs');
         //       console.log(1,j); 
         //   });
         
-        console.log(1,response.data);
+        console.log(response.data);
       } catch(error){
         console.log(error) ;
     }
