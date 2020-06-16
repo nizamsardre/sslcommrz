@@ -51,7 +51,11 @@ const qs = require('qs');
        // params.searchParams = urlParams ? urlParams : undefined;
         params.form = post_body ? post_body : undefined;
        // const response = await got(url, params);
+       //console.log(response.body);
+
         const response = await axios(url, {method: 'POST', data: qs.stringify(post_body)});
+        console.log(response.data);
+        
         //fetch
         //  fetch(url, {method: 'POST', body: fdata})
         //   .then(function(u){ 
@@ -61,7 +65,7 @@ const qs = require('qs');
         //       console.log(1,j); 
         //   });
         
-        console.log(response.data);
+        
       } catch(error){
         console.log(error) ;
     }
